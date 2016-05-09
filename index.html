@@ -13,9 +13,9 @@
 			<li ng-repeat="thing in toDoList">{{thing}}</li>
 		</ul>
 
-		<form ng-submit="toDoThing()">
-		<input type="text" ng-model="toDoEnter" placeholder="Add to do" />
-		<input type="submit" value="Enter" />
+		<form ng-submit="toDoThing(toDoEnter)">
+			<input type="text" ng-model="toDoEnter" placeholder="Add to do" />
+			<input type="submit" value="Enter" />
 		</form>
 			
 		
